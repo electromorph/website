@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="css\app.css" Url="css/app.css" ReplaceContent="TRUE" />
+    <File Path="css\main.css" Url="css/main.css" ReplaceContent="TRUE" />
+    <File Path="css\normalize.css" Url="css/normalize.css" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

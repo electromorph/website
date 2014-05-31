@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Scripts\" Type="ElementManifest" />
+    <ProjectItemFile Source="App.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.8.2.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.8.2.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery-1.8.2.intellisense.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="HelloWorldClientWebPart.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="angular-route.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="modernizr-2.8.0.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_app.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_controllers.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_directives.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_filters.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_main.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_plugins.js" Target="Scripts\sc\" Type="ElementFile" />
+    <ProjectItemFile Source="sc\sc_services.js" Target="Scripts\sc\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="11917323-cb02-4da1-afd5-30ceef4c79a2" 
+        solutionId="11917323-cb02-4da1-afd5-30ceef4c79a2" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="EmptySPApp"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="5921c4a6-edc1-43f6-8a0c-d384cd8c1603" />
+  </features>
+</package>

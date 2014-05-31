@@ -1,0 +1,94 @@
+<h2>Design A Shaft Coupler</h2>
+<!--Search <input type="text" ng-model="nameFilter" placeholder="Type..."/>-->
+
+<p>
+    <!--<img ng-src="/img/converters/SC{{leftSize.sizeInmm}}-{{rightSize.sizeInmm}}{{setScrewColour}}.png" />-->
+    <img ng-src="http://localhost:51696/GetCoupler/{{leftSize.sizeInmm}}/{{leftSize.description}}/{{rightSize.sizeInmm}}/{{rightSize.description}}/5/{{numberOfSetScrews}}/{{setScrewColour}}/Picture.png" />
+</p>
+<div style="padding-left: 2em; width: 450px;">
+    <div style="border-style: solid; border-color: black; border-width: 1px; width: 400px; padding: 0em 2em 2em 2em;">
+        <h2>Select shaft sizes</h2>
+        <table>
+            <tr>
+                <td style="padding-bottom: 0.5em; text-align: left;">Left diameter
+                </td>
+                <td style="padding-bottom: 0.5em; padding-left: 0.5em;">
+                    <select ng-model="leftSize" ng-options="measurement.description group by measurement.type for measurement in availableMeasurements | filter: nameFilter"></select>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 0.5em; text-align: left;">Right diameter
+                </td>
+                <td style="padding-left: 0.5em;">
+                    <select ng-model="rightSize" ng-options="measurement.description group by measurement.type for measurement in availableMeasurements | filter: nameFilter"></select>
+                </td>
+            </tr>
+        </table>
+        <h2>Options</h2>
+        <h3>Set screw colour</h3>
+        <p>
+            Silver&nbsp;<input type="radio" ng-model="setScrewColour" value="silver">
+            &nbsp;&nbsp;&nbsp;Black&nbsp;<input type="radio" ng-model="setScrewColour" value="black">
+        </p>
+        <h3>Number of set screws</h3>
+        <p>
+            Each converter comes with two set screws included.  Doubling this to 4 gives you set screws
+        on top and bottom of the shaft. (&pound;0.15 extra)&nbsp;
+        <input type="checkbox" ng-model="numberOfSetScrews" ng-true-value="4" ng-false-value="2" />
+        </p>
+        <h3>Tight/Loose fit</h3>
+        <p>
+            Selecting the 'loose fit' option adds 1mm extra clearance to the diameter (i.e. a '4mm with loose fit' would actually
+       be drilled to 4.1mm.)  NB: This option only applies to metric values.
+        </p>
+        <table>
+            <tr>
+                <td style="padding-bottom: 0.5em;">
+                    <div style="padding-left: 2em">
+                        Loose fit on left
+                    </div>
+                </td>
+                <td style="padding-left: 0.5em;">
+                    <input type="checkbox" ng-model="leftAccuracy" ng-true-value="loose" ng-false-value="exact" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div style="padding-left: 2em">
+                        Loose fit on right
+                    </div>
+                </td>
+                <td style="padding-left: 0.5em;">
+                    <input type="checkbox" ng-model="rightAccuracy" ng-true-value="loose" ng-false-value="exact" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h3>You have specified</h3>
+    <p>
+        <table>
+            <tr>
+                <td>
+                    <img align="left" style="padding-right: 2em" ng-src="../img/converters/{{setScrewColour}}{{numberOfSetScrews}}.png" />
+                </td>
+                <td>
+                    <span class="ms-rteStyle-Quote">&ldquo;8mm gold-anodized aluminium shaft coupler joining {{leftSize.description}} ({{leftAccuracy}}) to {{rightSize.description}} ({{rightAccuracy}}) with {{numberOfSetScrews}} {{setScrewColour}} setscrews&rdquo;
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="font-size:x-small;text-align:center;">Representative image only</span>
+                </td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        Quantity:
+    <input type="text" style="width: 40px" ng-model="quantity" />
+        Price: &pound;{{(numberOfSetScrews > 2 ? 0.15 : 0) + (quantity < 2 ? 2.99 : (quantity < 6 ? 1.99 : (quantity < 50 ? 1.49 : 0.99)))}}
+    </p>
+    <p>
+        <a ng-href="http://www.romancart.com/cart.asp?itemname=8mm gold-anodized aluminium shaft coupler joining {{leftSize.description}} ({{leftSize.type="metric" ? leftAccuracy : exact}}) to {{rightSize.description}} ({{rightAccuracy}}) with {{numberOfSetScrews}} {{setScrewColour}} setscrews&storeid=20772&quantity={{quantity}}&price={{(numberOfSetScrews > 2 ? 0.15 : 0) + (quantity < 2 ? 2.99 : (quantity < 6 ? 1.99 : (quantity < 50 ? 1.49 : 0.99)))}}&x1itemname=2 grubsrews&x1price=0.15&x1include=on">Add to cart</a>
+    </p>
+</div>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="3ce7c0ff-9e29-46b2-93eb-6846655aadaf" 
+        solutionId="3ce7c0ff-9e29-46b2-93eb-6846655aadaf" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ShaftConverter"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="72d060f3-8fd9-40af-a12d-cbeae4f65cd6" />
+  </features>
+</package>

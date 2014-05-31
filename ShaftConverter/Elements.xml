@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="js\app.js" Url="js/app.js" ReplaceContent="TRUE" />
+    <File Path="js\controllers.js" Url="js/controllers.js" ReplaceContent="TRUE" />
+    <File Path="js\directives.js" Url="js/directives.js" ReplaceContent="TRUE" />
+    <File Path="js\filters.js" Url="js/filters.js" ReplaceContent="TRUE" />
+    <File Path="js\main.js" Url="js/main.js" ReplaceContent="TRUE" />
+    <File Path="js\plugins.js" Url="js/plugins.js" ReplaceContent="TRUE" />
+    <File Path="js\services.js" Url="js/services.js" ReplaceContent="TRUE" />
+    <File Path="js\vendor\angular-route.min.js" Url="js/vendor/angular-route.min.js" ReplaceContent="TRUE" />
+    <File Path="js\vendor\modernizr-2.8.0.min.js" Url="js/vendor/modernizr-2.8.0.min.js" ReplaceContent="TRUE" />
+    <File Path="css\app.css" Url="css/app.css" ReplaceContent="TRUE" />
+    <File Path="css\main.css" Url="css/main.css" ReplaceContent="TRUE" />
+    <File Path="css\normalize.css" Url="css/normalize.css" ReplaceContent="TRUE" />
+    <File Path="img\converters\black2.png" Url="img/converters/black2.png" ReplaceContent="TRUE" />
+    <File Path="img\converters\black4.png" Url="img/converters/black4.png" ReplaceContent="TRUE" />
+    <File Path="img\converters\silver2.png" Url="img/converters/silver2.png" ReplaceContent="TRUE" />
+    <File Path="img\converters\silver4.png" Url="img/converters/silver4.png" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
